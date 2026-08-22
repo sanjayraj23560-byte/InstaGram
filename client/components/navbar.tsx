@@ -78,7 +78,7 @@ function Navbar() {
 
                 {/* More menu */}
 
-                <button onClick={()=>router.push('/profile')}
+                <button onClick={()=>router.push('/login')}
                     className={`group flex items-center gap-4 rounded-xl py-3 transition-colors duration-200 ease-out text-neutral-300 hover:bg-neutral-900 hover:text-white active:scale-95 ${expanded ? 'px-3 w-full' : 'w-12 h-12 justify-center mx-auto'
                         }`}
                 >
