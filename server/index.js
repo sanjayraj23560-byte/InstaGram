@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
+import cookieParser from 'cookie-parser'
 import DB from './DB.js'
 import router from './router/index.js'
 dotenv.config()
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 5000
 
 // Essential Middlewares
 app.use(cors())
+app.use(cookieParser())
 app.use(express.json()) // Allows your server to parse JSON request bodies
 DB()
 // Test Route

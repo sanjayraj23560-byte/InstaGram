@@ -9,7 +9,7 @@ export default function Home() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const subbmit = async () => {
-        await axios.post(`http://localhost:5000/api/login/api/auth/login`, {
+        await axios.post(`http://localhost:5000/api/user`, {
             user: username,
             password: password
         }).then(() => console.log(username, password))
