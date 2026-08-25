@@ -3,7 +3,8 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
 import DB from './DB.js'
-import router from './router/index.js'
+import router from './router/authRouter.js'
+import authRoutes from './router/index.js'
 dotenv.config()
 
 const app = express()
@@ -19,6 +20,7 @@ app.use('/api', router);
 app.get('/', (req, res) => {
     res.send('API successfully!')
 })
+app.use('/api/auth', authRoutes);
 
 // Start Server
 app.listen(PORT, () => {
