@@ -72,7 +72,7 @@ function SearchBar() {
     }
 
     return (
-        <div className='mt-10 flex justify-center px-4'>
+        <div className='mt-10 flex flex-col justify-center px-4'>
             <div className='relative w-full max-w-2xl'>
                 <input
                     type="text"
@@ -94,6 +94,33 @@ function SearchBar() {
                 {/* Search Icon */}
                 <div className='absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors'>
                     <FaMagnifyingGlass size={18} />
+                </div>
+
+            </div>
+            <div className='mt-5 gap-2 flex'>
+                <div className='flex flex-row flex-wrap gap-3'>
+                    <div className='w-55'>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className='w-55'>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className='w-30'>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className='w-60'>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className=''>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className=''>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                 <div className=''>
+                    <img src="https://images.unsplash.com/photo-1773332585956-2d0e8ac80cb6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+
                 </div>
             </div>
         </div>
