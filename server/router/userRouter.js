@@ -15,4 +15,14 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.post('/get', async (req, res) => {
+    try {
+        const getUser = await userModel.find()
+        console.log(getUser)
+        res.send({ getUser })
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 export default router;

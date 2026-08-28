@@ -1,18 +1,18 @@
-'use client';
+'use client'
 import Image from "next/image";
-import axios from 'axios';
+import axios from 'axios'
 import { useRouter } from "next/navigation";
-import { FaInstagram } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa6'
 import { useState } from "react";
 export default function Home() {
-    const router = useRouter();
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const router = useRouter()
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
     const subbmit = async () => {
-        await axios.post(`http://localhost:5000/api/login/api/auth/login`, {
+        await axios.post(`http://localhost:5000/api/user`, {
             user: username,
             password: password
-        }).then((res) => console.log(res))
+        }).then(() => console.log(username, password))
         console.log(username, password)
     }
     return (
